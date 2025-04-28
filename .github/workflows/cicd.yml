@@ -12,12 +12,11 @@ on:
 
 jobs:
     terraform-deployment:
-      runs-on: benco-republic
+      runs-on: ubuntu-latest
 
       steps:
         - name: Checkout code
           uses: actions/checkout@v3
 
-        - name: terraform version
-          run: |
-            pwsh -command "terraform -v"
+        - name: terraform version 
+          run: terraform -v
