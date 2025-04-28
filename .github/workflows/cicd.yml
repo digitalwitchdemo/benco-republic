@@ -18,5 +18,6 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v3
 
-        - name: terraform version 
-          run: terraform -v
+        - name: terraform version
+          run: |
+            pwsh -command "terraform -v"
