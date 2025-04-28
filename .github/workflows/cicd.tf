@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-    workflow_dispatch:
+  workflow_dispatch:
 
   # job section 
 
@@ -16,7 +16,7 @@ on:
 
       steps:
         - name: Checkout code
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
 
         - name: terraform version 
           run: terraform -v
